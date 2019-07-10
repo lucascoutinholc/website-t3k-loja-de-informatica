@@ -1,0 +1,303 @@
+/*
+Trabalho de Programação Básica para Web
+IFTO - Instituto Federal do Tocantins
+Professor: Vinicius Costa Disciplina: Programação Básica para Web
+Aluno: Lucas Coutinho de Almeida
+Última Modificação: 22/06/2019 às 10:50
+*/
+
+/* Fonte da página */
+@font-face {
+    font-family: 'Futura';
+    src: url("Futura Heavy font.ttf");
+}
+/* Fim do Fonte da Página */
+
+
+/* Seletor Universal */
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: Futura;
+}
+/* Fim do Seletor Universal */
+
+
+/* Cabeçalho */
+body {
+    background-color: white;
+    text-align: center;
+}
+
+body div#cabecalho {
+    background-color: #063347;
+    width: 100%;
+    height: 160px;
+}
+
+body div#cabecalho header a {
+    position: relative;
+    top: -10px;
+    left: 5px;
+    text-align: center;
+}
+/* Fim do Cabeçalho */
+
+
+/* Navegação Principal */
+body nav#menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #095271;
+}
+  
+body nav#menu ul li {
+    float: left;
+    position: relative;
+    left: 39%;
+}
+  
+body nav#menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+  
+body nav#menu ul li a:hover {
+    background-color: #7ab1c8;
+}
+
+body nav#menu ul li.direita {
+    float: left;
+    position: relative;
+    left: 64.60%;
+}
+
+body nav#menu ul li#risco{
+    border-left: 1px solid white;
+}
+
+body nav#menu ul li.direita#risco{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+body nav#menu ul li#risco.unico{
+    border-right: 1px solid white;
+}
+/* Fim da Navegação Principal */
+
+
+/* Conteúdo */
+body section {
+    text-align: center;
+    width: 40.5%;
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+
+section div#conteudo header h3 {
+    font-size: 2em;
+    color: #83bfda;
+    position: relative;
+    left: 1%;
+}
+
+body section div#conteudo article p {
+    background-color: #83bfda;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    color: white;
+}
+/* Fim de Conteúdo */
+
+
+/* Rodapé */
+footer div#rodape {
+    background-color: #073e55;
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    top: 620px;
+}
+
+footer div#sub-menu {
+    position: relative;
+    top: 7%;
+    left: 47.5%;
+}
+
+footer div#sub-menu p {
+    font-size: 1.2em;
+    color: white;
+    padding: 5px;
+    position: relative;
+    left: -46.5%;
+}
+
+footer div#sub-menu nav ul li {
+    list-style-type: none;
+    width: 125px;
+    height: 30px;
+}
+
+footer div#sub-menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+}
+
+footer div#sub-menu nav ul li a:hover {
+    background-color: #7ab1c8;
+    position: relative;
+    left: 5px;
+}
+
+footer div#redes-sociais p {
+    font-size: 1.0em;
+    color: white;
+    padding: 5px;
+}
+
+footer div#redes-sociais {
+    position: absolute;
+    top: 58%;
+    right: 43.2%;
+    text-align: center;
+}
+
+footer div#redes-sociais a {
+    text-decoration-line: none;
+}
+
+footer small {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80%;
+    right: 40.2%;
+}
+/* Fim do Rodapé */
+
+
+/* Responsividade */
+@media screen and (min-width: 1160px) and (max-width: 1510px) {
+     div#conteudo header h3 {
+        font-size: 2em;
+        color: white;
+        position: relative;
+        left: -7%;
+    }
+
+    footer div#rodape {
+        background-color: #073e55;
+        width: 100%;
+        height: 180px;
+        display: block;
+        position: absolute;
+        top: 700px;
+    }
+
+    aside div#info-add header p {
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    aside div#info-add {
+        display: block;
+        width: 20%;
+        position: absolute;
+        top: 27.5%;
+        left: 80%;
+    }
+}
+
+@media screen and (min-width: 865px) and (max-width: 1160px) {
+    section div#conteudo header h3 {
+        font-size: 2em;
+        color: white;
+        position: relative;
+        left: -5%;
+    }
+
+    footer div#rodape {
+        background-color: #073e55;
+        width: 100%;
+        height: 180px;
+        display: block;
+        position: absolute;
+        top: 750px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 865px) {
+    body nav#menu ul li {
+        text-align: center;
+        float: none;
+    }
+
+    body nav#menu ul li.direita {
+        text-align: center;
+        float: none;
+    }
+
+    body section {
+        text-align: center;
+        width: 55.5%;
+        position: relative;
+        top: 30%;
+        left: 28%;
+    }
+
+    body section div#conteudo article p {
+        position: relative;
+        right: 10%;
+    }
+
+    section div#conteudo header h3 {
+        font-size: 2em;
+        color: white;
+        position: relative;
+        left: -9%;
+    }
+
+    footer div#rodape {
+        background-color: #073e55;
+        width: 100%;
+        height: 300px;
+        display: block;
+        position: absolute;
+        top: 1450px;
+    }
+    
+    footer div#redes-sociais p {
+        font-size: 1.0em;
+        color: white;
+        padding: 5px;
+    }
+    
+    footer div#redes-sociais {
+        position: absolute;
+        top: 63%;
+        left: 5%;
+        text-align: center;
+    }
+    
+    footer small {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 87%;
+        right: 15%;
+    }
+}

@@ -1,0 +1,135 @@
+<!--
+Trabalho de Programação Básica para Web
+IFTO - Instituto Federal do Tocantins
+Professor: Vinicius Costa Disciplina: Programação Básica para Web
+Aluno: Lucas Coutinho de Almeida
+Última Modificação: 22/06/2019 às 10:50
+-->
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UFT-8">
+    <title> T3K - Loja de Informática </title>
+    <link rel="stylesheet" href="style-entrar.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <div id="cabecalho">
+        <header>
+            <a href="index.html">
+                <img src="Imagens/logo-site.png" alt="Logomarca do site" width="170">
+            </a>
+        </header>
+    </div>
+
+    <!--Navegação-->
+    <nav id="menu">
+        <ul>
+            <li id="risco">
+                <a href="index.html"> Início </a>
+            </li>
+
+            <li id="risco">
+                <a href="produtos.html"> Produtos </a>
+            </li>
+
+            <li id="risco">
+                <a href="quem-somos.html"> Quem Somos </a>
+            </li>
+
+            <li id="risco" class="unico">
+                <a href="fale-conosco.html"> Fale Conosco </a>
+            </li>
+
+            <li class="direita" id="risco">
+                <a href="#"> Entrar </a>
+            </li>
+
+            <li class="direita">
+                <a href="cadastrar.html"> Cadastrar </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Conteúdo-->
+    <section>
+        <div id="conteudo">
+            <header>
+                <h3> Entrar </h3>
+            </header>
+
+            <article>
+                <div id="formulario">
+                    <form>
+                        E-mail: <br>
+                        <input type="email" name="email" required> <br><br>
+
+                        Senha: <br>
+                        <input type="password" name="senha" required> <br><br>
+
+                        <input type="button" name="enviar" value="Enviar">
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <div id="rodape">
+            <div id="sub-menu">
+                <p>
+                    Navegue pelo nosso site:
+                </p>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html"> Início </a>
+                        </li>
+
+                        <li>
+                            <a href="produtos.html"> Produtos </a>
+                        </li>
+
+                        <li>
+                            <a href="quem-somos.html"> Quem Somos </a>
+                        </li>
+
+                        <li>
+                            <a href="fale-conosco.html"> Fale Conosco </a>
+                        </li>
+                </nav>
+            </div>
+
+            <div id="redes-sociais">
+                <p>
+                    Acesse nossas redes sociais:
+                </p>
+
+                <a href="#">
+                    <img src="Imagens/logo-instagram.png" alt="Logomarca do Instagram" width="30">
+                </a>
+
+                <a href="#">
+                    <img src="Imagens/logo-facebook.png" alt="Logomarca do Facebook" width="42">
+                </a>
+
+                <a href="#">
+                    <img src="Imagens/logo-youtube.png" alt="Logomarca do Youtube" width="30">
+                </a>
+            </div>
+
+            <small>
+                Desenvolvido por Lucas Coutinho de Almeida <br>
+                Copyright © 2019 T3K - Todos os direitos reservados
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>
